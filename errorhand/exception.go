@@ -9,7 +9,7 @@ import (
 )
 
 type Exception interface {
-	//Action()
+	
 	GetError() error
 }
 
@@ -18,9 +18,6 @@ type DivisionError struct {
 	Action func()
 }
 
-//func (e DivisionError) Action() {
-//	fmt.Println("Some action")
-//}
 
 func (e DivisionError) GetError() error {
 	//defer e.Action()
