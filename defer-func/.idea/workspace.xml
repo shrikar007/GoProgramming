@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9a425a1-87c4-4d08-a266-62112fb5c0af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Functions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Functions/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../concurrency/bufferedch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../concurrency/bufferedch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../concurrency/con.go" beforeDir="false" afterPath="$PROJECT_DIR$/../concurrency/con.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../concurrency/wrichannel.go" beforeDir="false" afterPath="$PROJECT_DIR$/../concurrency/wrichannel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/defrefunction/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../errorhand/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../errorhand/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../errorhand/exception.go" beforeDir="false" afterPath="$PROJECT_DIR$/../errorhand/exception.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hashtable/demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/demo.go" afterDir="false" />
@@ -34,15 +34,27 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
+        <entry file="file://$PROJECT_DIR$/src/defrefunction/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="269">
               <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/work.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="37" selection-end-column="1" />
+              <folding>
+                <element signature="e#14#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main1.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -67,19 +79,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/main1.go" />
+        <option value="$PROJECT_DIR$/work.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="109" />
-    <option name="y" value="9" />
-    <option name="width" value="1019" />
-    <option name="height" value="651" />
+    <option name="y" value="28" />
+    <option name="width" value="1009" />
+    <option name="height" value="652" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -93,6 +113,17 @@
             <path>
               <item name="defer-func" type="b2602c69:ProjectViewProjectNode" />
               <item name="defer-func" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="defer-func" type="b2602c69:ProjectViewProjectNode" />
+              <item name="defer-func" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="defer-func" type="b2602c69:ProjectViewProjectNode" />
+              <item name="defer-func" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="defrefunction" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -113,6 +144,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/defrefunction" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -125,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main1.go">
+  <component name="RunManager" selected="Go Build.go build work.go">
     <configuration name="go build main1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="defer-func" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -142,8 +178,17 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build work.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="defer-func" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/work.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build work.go" />
         <item itemvalue="Go Build.go build main1.go" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
@@ -154,16 +199,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24967907" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24967907" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.328877" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.328877" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.328877" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -177,20 +222,42 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/work.go</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main1.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding>
             <element signature="e#14#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/defrefunction/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="37" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
