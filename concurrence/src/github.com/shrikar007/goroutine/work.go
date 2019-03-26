@@ -1,42 +1,47 @@
-
-
 package main
 
 import (
-	"net/http"
-	"log"
-	"bufio"
 	"fmt"
+	"time"
 )
 
-func main() {
-	res, err := http.Get("http://www.gutenberg.org/files/1342/1342-0.txt")
-	if err != nil {
-		log.Fatal(err)
-	}
 
-	scanner := bufio.NewScanner(res.Body)
-	defer res.Body.Close()
+func main(){
+	ch1:=make(chan bool ,2)
+	//ch2:=make(chan bool)
+	go iterat1(ch1)
+	//<-ch1
+	go iterat2(ch1)
+	//time.Sleep(1*time.Second)
+    <-ch1
+	<-ch1
 
-	scanner.Split(bufio.ScanWords)
+	fmt.Println("\nThe End")
 
-	var words int
-	var word string
-
-	bucket := make([]int, 12)
-	for scanner.Scan() {
-		words++
-		word = scanner.Text()
-		bId := getBucketId(word, 12)
-		bucket[bId]++
-	}
-	fmt.Println(words, bucket)
 }
 
-func getBucketId(word string, numberOfBuckets int) int {
-	var sum int
-	for _, char := range word  {
-		sum += int(char)
+
+
+func iterat1(ch chan bool){
+
+
+
+	for  i:=1; i<=10;i++{
+
+		time.Sleep(100)
+
+
+
+		fmt.Print(" ",i)
 	}
-	return sum % numberOfBuckets
+	ch<-true
+}
+func iterat2(ch chan bool){
+
+	for i:=11;i<=20;i++{
+		time.Sleep(100)
+
+		fmt.Print(" ",i)
+	}
+	ch<-true
 }
