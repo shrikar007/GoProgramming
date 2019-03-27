@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 )
 
-const port = 7070
+const port = 7071
 
 type Msg struct {
 	Data string `json:"data"`
@@ -23,13 +23,14 @@ func main() {
 func myHandler(w http.ResponseWriter, r *http.Request) {
 	message := Msg{Data: "Hello, World!"}
 
-	//data, err := json.Marshal(message)
-	encoder := json.NewEncoder(w)
-	encoder.Encode(&message)
+	data, err := json.Marshal(message)
+  //encoder := json.NewEncoder(w)
 
-	//if err != nil {
-		//log.Fatal(err)
-	//}
+	//encoder.Encode(&message)
 
-	//fmt.Fprint(w, data)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Fprint(w, data)
 }
