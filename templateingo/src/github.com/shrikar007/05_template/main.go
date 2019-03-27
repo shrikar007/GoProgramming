@@ -1,10 +1,9 @@
 package main
 
 import (
-
-	"text/template"
 	"log"
-	"os"
+	"net/http"
+	"text/template"
 )
 var tpl *template.Template
 
@@ -13,7 +12,16 @@ func init() {
 }
 
 func main() {
-	err := tpl.ExecuteTemplate(os.Stdout, "index.html", "World!")
+	http.HandleFunc("/slice",HomePage)
+	log.Fatal(http.ListenAndServe(":8086",nil))
+
+
+
+}
+func HomePage(w http.ResponseWriter, r *http.Request) {
+
+	s := []string{"shrikar", "dinesh", "mohanish", "prathamesh"}
+	err := tpl.ExecuteTemplate(w, "slice.html", s)
 	if err != nil {
 		log.Fatal(err)
 	}
