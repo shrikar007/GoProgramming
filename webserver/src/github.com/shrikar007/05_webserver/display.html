@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display data</title>
+</head>
+<body>
+
+{{$names:= .}}
+
+Student data
+
+<ul>
+    {{range $index, $value := $names }}
+        <li>{{$index}} - {{$value}}</li>
+    {{end}}
+</ul>
+</body>
+</html>
