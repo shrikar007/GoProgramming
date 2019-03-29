@@ -5,16 +5,21 @@
     <title>my first form</title>
 </head>
 <body>
+{{$name:=.}}
+{{if $name}}
+    <h1>login Successful</h1>
+{{else}}
 
-    <h1>Contact</h1>
+    <h1>Log in</h1>
     <form method="POST">
         <label>USERNAME:</label><br />
         <input type="text" name="user"><br />
         <label>PASSWORD:</label><br />
         <input type="text" name="pass"><br />
 
-        <input type="submit">
+        <input type="submit" >
     </form>
+{{end}}
 
 </body>
 </html>
